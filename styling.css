@@ -1,13 +1,69 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    height: 2000px;
-    width: 100%;
-    background-color: white;
+/* Fonts */
+@font-face {
+    font-family: 'college-football';
+    src: url(./fonts/college-football-sans-font/CollegeFootballSans-1vaj.ttf);
 }
 
+@font-face {
+    font-family: 'Tungsten';
+    src: url(fonts/Tungsten/Tungsten-Medium.otf);
+}
+/* Fonts */
+
+
+
+/* Background & Website Size */
+body {
+    margin: 0;
+    padding: 0;
+    background: maroon;
+    height: 2000px;
+    position: relative;
+    font-family: 'Tungsten'
+}
+/* Background & Website Size */
+
+
+
+/* Landing View */
 .landing-image {
+    position: absolute;
+    overflow: hidden;
     width: 100%;
-    height: 1080px;
-    background-image: url(./images/Kyle.png);
+    height: 100vh;
+    background-image: url("./images/Kyle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+    /* Navbar */
+    .navbar {
+        width: 100%;
+        height: 100px;
+        border: 0px;
+        position: fixed;
+    }
+
+    .navbar-name {
+        padding: 20px;
+        font-size: 60px;
+        color: white;
+        float: left;
+    }
+
+    .navbar a {
+        height: 100%;
+    }
+    /* Navbar */
+
+
+
+/* Landing View */
+
+.main-area {
+    background-color: #dbb386;
+    height: 100%;
+    width: 100%;
 }
