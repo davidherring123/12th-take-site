@@ -1,4 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Fonts */
+
 @font-face {
     font-family: 'college-football';
     src: url(./fonts/college-football-sans-font/CollegeFootballSans-1vaj.ttf);
@@ -8,24 +13,41 @@
     font-family: 'Tungsten';
     src: url(fonts/Tungsten/Tungsten-Medium.otf);
 }
+
 /* Fonts */
 
 
 
-/* Background & Website Size */
+/* Background & Sections */
+
 body {
     margin: 0;
     padding: 0;
     background: maroon;
-    height: 2000px;
     position: relative;
-    font-family: 'Tungsten'
+    font-family: 'Tungsten';
+    
 }
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.space {
+    height: 10vh;
+} 
+
 /* Background & Website Size */
 
 
 
 /* Landing View */
+
 .landing-image {
     position: absolute;
     overflow: hidden;
@@ -36,34 +58,85 @@ body {
     background-position: center;
 }
 
+    /* Learn More Redirect */
 
-
-    /* Navbar */
-    .navbar {
-        width: 100%;
-        height: 100px;
-        border: 0px;
-        position: fixed;
+    .learn-container {
+        display: grid;
+        flex-direction: column;
+        justify-self: center;
     }
 
-    .navbar-name {
-        padding: 20px;
-        font-size: 60px;
+    .name {
         color: white;
-        float: left;
+        font-size: 160px;
+        width: 100%;
+        margin-top: 20vh;
+        text-align: center;
     }
 
-    .navbar a {
-        height: 100%;
+    .learn-button {
+        background-color: maroon;
+        color: white;
+        border-color: gray;
+        width: 200px;
+        font-size: 40px;
+        margin: auto;
+        margin-top: 1vh;
+        font-family: 'Tungsten';
+        transition: .3s;
+        border-style: solid;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
     }
-    /* Navbar */
 
+    .learn-button:hover {
+        scale: 102.5%;
+    }
 
+    /* About us Redirect */
 
 /* Landing View */
 
-.main-area {
-    background-color: #dbb386;
-    height: 100%;
-    width: 100%;
+
+
+/* About the Podcast */
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+    filter: blur(5px);
 }
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0px);
+}
+
+h1 {
+    font-size: 120px;
+    margin: 0px;
+    color: black;
+}
+
+p {
+    font-size: 50px;
+    text-align: center;
+    width: 750px;
+    background-color: lightgray;
+    padding: 40px;
+    color: black;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+/* About the Podcast */
+
+
+
+/* About the Creators */
+/* About the Creators */
