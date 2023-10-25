@@ -38,9 +38,16 @@ section {
     align-content: center;
 }
 
-.space {
-    height: 10vh;
-} 
+.podcast-section {
+    height: 70vh;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1 1;
+    place-items: center;
+    align-items: center;
+}
 
 /* Background & Website Size */
 
@@ -58,7 +65,27 @@ section {
     background-position: center;
 }
 
-    /* Learn More Redirect */
+li {
+    display: inline;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.fa {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: maroon;
+    color: white;
+    scale: 160%;
+    float:right;
+    margin-right: 40px;
+}
+
+
+
+    /* Listen Now Redirect */
 
     .learn-container {
         display: grid;
@@ -100,7 +127,9 @@ section {
     }
 
     .learn-button:hover {
-        scale: 102.5%;
+        scale: 105%;
+        transition-delay: 0s;
+        transition-duration: .3s;
     }
 
     /* About us Redirect */
@@ -110,12 +139,16 @@ section {
 
 
 /* About the Podcast */
-/* .hidden {
-    opacity: 0;
-    transition: all 1s;
-    transform: translateX(-100%);
-    filter: blur(5px);
-} */
+
+    /* Podcast Section */
+
+    .latest {
+        width: 100%;
+        font-size: 72px;
+        margin: 40px;
+    }
+
+    /* Podcast Section */
 
 .show {
     opacity: 1;
@@ -149,6 +182,7 @@ p {
         transition: none;
     }
 }
+
 /* About the Podcast */
 
 
