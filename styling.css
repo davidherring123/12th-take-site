@@ -2,6 +2,13 @@ html {
     scroll-behavior: smooth;
 }
 
+/* User Accessibility */
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
 /* Fonts */
 
 @font-face {
@@ -39,14 +46,10 @@ section {
 }
 
 .podcast-section {
-    height: 70vh;
+    margin: 0;
+    height: 50vh;
     width: 100%;
     background-color: white;
-    display: grid;
-    grid-column: 1;
-    grid-row: 1 1;
-    place-items: center;
-    align-items: center;
 }
 
 /* Background & Website Size */
@@ -101,12 +104,6 @@ li {
         text-align: center;
         transition: all 1s;
     }
-    
-    .hidden {
-        opacity: 0;
-        filter: blur(5px);
-        transform: translateY(-20px);
-    }
 
     .learn-button {
         background-color: maroon;
@@ -132,58 +129,50 @@ li {
         transition-duration: .3s;
     }
 
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateY(-20px);
+    }
+    
+    .show {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0px);
+    }
+
     /* About us Redirect */
 
 /* Landing View */
 
 
 
-/* About the Podcast */
 
-    /* Podcast Section */
+/* Podcast Section */
 
-    .latest {
-        width: 100%;
-        font-size: 72px;
-        margin: 40px;
-    }
-
-    /* Podcast Section */
-
-.show {
-    opacity: 1;
-    transform: translateX(0);
-    filter: blur(0px);
+.latest {
+    width: fit-content;
+    padding: 30px;
+    font-size: 72px;
+    height: 100%;
+    margin-left: 50px;
+    background-color: gray;
+    color: white;
 }
 
-h1 {
-    font-size: 120px;
-    margin: 0px;
-    color: black;
-}
-
-p {
-    font-size: 50px;
+.about-podcast {
+    background-color: gray;
+    width: 360px;
+    height: 360px;
+    font-size: 72px;
+    color: white;
     text-align: center;
-    width: 750px;
-    background-color: lightgray;
-    padding: 40px;
-    color: black;
-}
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
 
-/* About the Podcast */
+/* Podcast Section */
 
 
 
